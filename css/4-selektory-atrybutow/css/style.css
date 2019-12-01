@@ -1,0 +1,26 @@
+
+/* atrybut */
+[title] {
+    color: pink;
+}
+
+[title='About me'] {
+    background-color: blue;
+}
+/* słowo się zabiera */
+[title~='Container'] {
+    background-color: indigo;
+    text-decoration: none;
+}
+
+[title*='ll'] {
+    background-color: khaki;
+}
+/* pierwsze słowo */
+[title^='More'] {
+    background-color: red;
+}
+/* ostatnie słowo */
+[title$='portfolio'] {
+    background-color: yellow;
+}
