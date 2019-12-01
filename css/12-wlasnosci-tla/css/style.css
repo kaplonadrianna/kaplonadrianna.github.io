@@ -1,0 +1,8 @@
+#background-img {
+    background-color: violet;
+    background-image: url('../img/truskawka.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
