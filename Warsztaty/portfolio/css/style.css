@@ -1,0 +1,22 @@
+* {
+    margin: 0 auto; 
+    padding: 0 auto;
+    box-sizing: 0 auto;
+}
+
+.header {
+    background-image: url('../img/header.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    background-position: top center;
+    background-color: #007bff;
+}
+
