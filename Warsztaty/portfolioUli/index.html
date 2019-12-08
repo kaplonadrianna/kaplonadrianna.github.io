@@ -14,41 +14,76 @@
         <div class="header">
             <h1>FRONT END DEVELOPER</h1>
             <hr>
-            <p>HTML<spam> • </spam>CSS<spam> • </spam>JavaScript</p>
+            <p>HTML<span> • </span>CSS<span> • </span>JavaScript</p>
             <a href="#portfolio" class="btn">DOWIEDZ SIĘ WIĘCEJ</a>
         </div>
     </header>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="#">O MNIE</a></li>
-            <li><a href="#about">PORTFOLIO</a></li>
-            <li><a href="#contact">KONTAKT</a></li>
+    <nav>
+        <label for="mobile-nav">MENU</label>
+        <input type="checkbox" id="mobile-nav">
+        <ul class="nav-menu">
+            <li class="menu-item"><a href="#about">O MNIE</a></li>
+            <li class="menu-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="menu-item"><a href="#contact">KONTAKT</a></li>
         </ul>
     </nav>
     
-    <section class="about">
-        <h2> O MNIE</h2>
-        <hr>
-        <p class="about-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit veritatis incidunt voluptatum debitis cumque? Ad aliquid doloribus est quaerat libero ipsum et odit, ab iusto eos consectetur enim! Beatae.</p>
-        <br />
-    
-        <p class="about-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem pariatur deleniti officiis repellendus distinctio, ipsa nostrum ipsam dolor dolorum. Pariatur necessitatibus nemo illo rem veritatis est aliquid dignissimos enim!</p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>O MNIE</h2>
+            <hr>
+            <img class="foto" src="img/about.jpg" alt="Zdjęcie profilowe">
+            <p class="about-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque velit veritatis incidunt voluptatum debitis cumque? Ad aliquid doloribus est quaerat libero ipsum et odit, ab iusto eos consectetur enim! Beatae.</p>
+            <p class="about-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem pariatur deleniti officiis repellendus distinctio, ipsa nostrum ipsam dolor dolorum. Pariatur necessitatibus nemo illo rem veritatis est aliquid dignissimos enim!</p> 
+            <a href="#portfolio" class="btn">MOJE PORTFOLIO</a>
+        </div>
     </section>
     
-    <section class="portfolio">
-        <h2>PORTFOLIO</h2>
-        <hr>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>PORTFOLIO</h2>
+            <hr>
+                <div class="gallery-fot">
+                    <div class="fot"><img src="img/photo-1.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-2.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-3.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-4.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-5.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-6.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-7.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-8.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-9.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-10.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-11.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                    <div class="fot"><img src="img/photo-12.jpg" alt="obrazek"><h3>Projekt</h3></div>
+                </div>
+        </div>
     </section>
 
-    <section class="contact">
-        <h2>KONTAKT</h2>
-        <hr>
-    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>KONTAKT</h2>
+            <hr>
 
+            <form action="">
+                <input id='name' type='text' placeholder="Imię">
+                <input id='email' type='email' placeholder="E-mail">
+                <textarea name='message' placeholder='Wiadomość'></textarea>
+                <input type='submit' class="btn" value="WYŚLIJ WIADOMOŚĆ">
+            </form>
+
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p> </p>
+        <p> Copyright © Akademia 108 - Szkoła Programowania </p>
     </footer>
 </body>
 </html>

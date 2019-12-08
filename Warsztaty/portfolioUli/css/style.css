@@ -4,16 +4,22 @@
     box-sizing: 0 auto;
 }
 
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #777;
+    font-size: 10px;
 }
 
 hr { 
     background-color: #007bff;
     border: 0; 
     height: 1px;
-    width: 70px;
+    width: 7em;
  }
 
 .btn {
@@ -21,11 +27,12 @@ hr {
     text-transform: uppercase;
     background-color: transparent;
     border: 1px solid #007bff;
-    padding: 14px 20px;
+    padding: 1em 1em;  
     display: inline-block;
     color: #333;
     cursor: pointer;
     transition: all 1s;
+    font-size: 1.2em;
 }
 
 .btn:hover {
@@ -36,9 +43,184 @@ hr {
 header {
     height: 70vh;
     background-image: url('../img/header.jpg');
-    background-position: center;
     background-size: cover;
+    background-position: center;
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
 }
+
+section {
+    padding: 5em 0em;
+    text-align: center;s
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 0.5em;
+    font-size: 2em; 
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+
+header h1 {
+    font-size: 4.5em;
+    color: #007bff;
+}
+
+header p {
+    margin: 1.6em 0;
+    font-size: 1.7em;
+    color: #333;
+}
+
+header p span {
+    color: #007bff;
+}
+
+nav {
+    background-color: #007bff;
+    /* przyklejone do gory i bedze sie przewijalo ze strona */
+    position: sticky;
+    top: 0;
+    z-index: 200; 
+    /* poczytać o z-indexie */
+}
+
+.nav-menu {
+    padding: 0em 0em;
+    text-align: center;
+    margin: 0em; 
+}
+
+.nav-menu .menu-item {
+    display: inline-block;
+    margin: 0em 0em;
+}
+
+.nav-menu .menu-item a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5em 2em;
+    font-size: 1.5em;
+}
+
+[for="mobile-nav"], #mobile-nav {
+    display: none;
+}
+
+.about .foto {
+    max-height: 40em; 
+    max-width: 40em;
+    border-radius: 50%;
+    margin: 3em 0em;
+}
+
+.about p {
+    max-width: 70%;
+    margin: 2em auto 2em auto;
+}
+
+
+.portfolio {
+    background-color: #f2f1ed; 
+}
+
+.portfolio .gallery-fot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+
+.gallery-fot .fot {
+    flex-basis: 25%;
+    height: 20em;
+    margin: 0;
+    position: relative;
+}
+
+.gallery-fot .fot img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* jak sie bd ukladal w pudelku, czy centrowal itp */
+    object-position: center;
+}
+
+.gallery-fot .fot h3{
+    position: absolute;
+    /* height: 100%; */
+    background-color: rgba(0, 130, 210, 0.5);
+    top: 0;
+    font-size: 3.5em;
+    color: #fff;
+    font-weight: 300;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+    margin: 0;
+    padding: 26% 0%;
+}
+
+.gallery-fot .fot h3:hover{
+    opacity: 1;
+}
+
+.contact form {
+    max-width: 70em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* wyjustowanie np blokow */
+}
+
+.contact form input:not([type="submit"]) {
+    flex-basis: 43%;
+    /* kolumna */
+    padding: 1.5em;
+    margin: 3em 0em;
+}
+
+.contact form textarea {
+    flex-basis: 100%;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    height: 10em;
+}
+
+.contact form [type="submit"] {
+    margin: 1em auto;
+}
+
+.container .social-media {
+    margin-top: 5em;
+}
+
+.social-media i {
+    display: inline-block;
+    margin: 0 0.5em;
+    font-size: 2.5em;
+}
+
+.social-media a {
+    color: #007bff
+}
+
+.footer {
+    background-color: #f2f1ed;
+    text-align: center;
+    padding: 4em 4em;
+}
+
+
+
