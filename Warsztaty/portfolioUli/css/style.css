@@ -222,5 +222,29 @@ nav {
     padding: 4em 4em;
 }
 
+@media screen and (max-width: 480px) {
+    [for="mobile-nav"] {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 1em;
+        font-size: 1.6em;
+    }
+    nav .nav-menu {
+        display: none; 
+    }
+    nav #mobile-nav:checked + ul {
+        display: block;
+    }
 
+    nav .nav-menu .menu-item {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
 
+    nav .nav-menu .menu-item a {
+        padding: 1.2em 2em;
+    }
+}
