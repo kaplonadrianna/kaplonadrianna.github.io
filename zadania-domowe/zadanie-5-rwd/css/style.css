@@ -1,0 +1,79 @@
+* {
+    margin: 0 0; 
+    /* padding: 0 0;
+    box-sizing: 0 0; */
+}
+
+body {
+    font-family: "Verdana", verdana;
+    color: white;
+    font-size: 10px;
+}
+
+nav {
+    background-image: url('../img/man-1.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: left;
+    display: flex;
+}
+
+.nav {
+    margin-left: 5em;
+}
+
+.nav h2 {
+    margin-bottom: 2em;
+}
+
+.nav h1 {
+    font-size: 3em;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+    nav {
+        background-image: url('../img/man-1.jpg');
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        align-items: flex-end ;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav {   
+        color: black;
+        margin: 0 0;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1170px) {
+    
+    nav {
+        background-image: url('../img/man-2.jpg');
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        align-items: flex-end ;
+        text-align: left;
+        display: flex;
+        justify-content: flex-end;
+    }  
+    .nav {   
+        margin-bottom: 35em;
+        margin-right: 10em;
+    }
+    .nav h1 {
+        font-size: 2em;
+    }
+    .nav h2 {
+        margin-bottom: 1.3em;
+    }
+}
+
