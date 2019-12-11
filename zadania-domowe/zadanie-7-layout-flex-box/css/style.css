@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto; 
+    padding: 0 auto;
+    box-sizing: 0 auto;
+}
+
+body {
+    color: white;
+    font-size: 10px;
+}
+
+p {
+    font-size: 3em;
+}
+
+header {
+    background-color: red;
+    text-align: center;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.jeden {
+    background-color: green;
+}
+
+.dwa {
+    background-color: blue;
+}
+
+.trzy {
+    background-color: pink;
+}
+
+footer {
+    background-color: violet;
+    text-align: center;
+    display: flex;
+}
