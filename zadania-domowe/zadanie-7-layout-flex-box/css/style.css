@@ -30,11 +30,11 @@ header {
 }
 
 .dwa {
-    background-color: blue;
+    background-color: blue; 
 }
 
 .trzy {
-    background-color: pink;
+    background-color: pink; transition-timing-function: stat
 }
 
 footer {
