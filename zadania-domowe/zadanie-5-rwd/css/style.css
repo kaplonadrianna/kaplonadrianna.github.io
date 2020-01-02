@@ -1,79 +1,83 @@
 * {
     margin: 0 0; 
-    /* padding: 0 0;
-    box-sizing: 0 0; */
+    padding: 0 0;
+    box-sizing: 0 0; 
 }
 
 body {
     font-family: "Verdana", verdana;
-    color: white;
     font-size: 10px;
 }
 
-nav {
+header {
     background-image: url('../img/man-1.jpg');
-    height: 90vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
-    align-items: center;
-    text-align: left;
+    align-items: flex-end;
+    text-align: center;
     display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-.nav {
-    margin-left: 5em;
+.text {
+    position: absolute;
+    top: 52vh;
+    color: black;
 }
 
-.nav h2 {
-    margin-bottom: 2em;
+.text h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
 }
 
-.nav h1 {
-    font-size: 3em;
-}
-
-
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 1171px) {
     
-    nav {
+    header {
         background-image: url('../img/man-1.jpg');
-        height: 90vh;
+        height: 100vh;
         background-size: cover;
         background-position: center;
-        align-items: flex-end ;
-        text-align: center;
+        align-items: center;
+        text-align: left;
         display: flex;
-        justify-content: center;
-    }
-    
-    .nav {   
-        color: black;
-        margin: 0 0;
+        justify-content: flex-start;
     }
 
+    .text {
+        color: white;
+        margin-left: 50px;
+    }
+
+    .text h1 {
+        font-size: 2.5em;
+        margin-top: 15px;
+    }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1170px) {
     
-    nav {
+    header {
         background-image: url('../img/man-2.jpg');
-        height: 90vh;
+        height: 70vh;
         background-size: cover;
         background-position: center;
-        align-items: flex-end ;
         text-align: left;
+        align-items: flex-start;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }  
-    .nav {   
-        margin-bottom: 35em;
-        margin-right: 10em;
-    }
-    .nav h1 {
-        font-size: 2em;
-    }
-    .nav h2 {
-        margin-bottom: 1.3em;
-    }
-}
 
+    .text {
+        color: white;
+        margin-top: 10px;
+        margin-left: 700px;
+    }
+
+    .text h1 {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+
+}
