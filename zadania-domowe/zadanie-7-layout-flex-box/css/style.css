@@ -1,44 +1,77 @@
-* {
-    margin: 0 auto; 
-    padding: 0 auto;
-    box-sizing: 0 auto;
-}
 
-body {
+.main {
     color: white;
-    font-size: 10px;
-}
-
-p {
-    font-size: 3em;
-}
-
-header {
-    background-color: red;
-    text-align: center;
-    display: flex;
-}
-
-.container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-.jeden {
-    background-color: green;
+.main > * {
+    flex: 1 100%;
+  }
+
+.text p {
+    margin-block-end: 0em;
+    margin-block-start: 0em;
 }
 
-.dwa {
-    background-color: blue; 
+.main > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+.header {
+    background: red;
+    padding: 4px;
 }
 
-.trzy {
-    background-color: pink; transition-timing-function: stat
+.asideLeft {
+    background: green;
 }
 
-footer {
-    background-color: violet;
-    text-align: center;
-    display: flex;
+.asideRight {
+    background: pink; 
 }
+
+.text {
+    background: blue;
+}
+
+.footer {
+    background: violet;
+    padding: 4px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .text {flex: 8;}
+    .asideRight {flex: 4;}
+
+    .text {order: 1;}
+    .asideRight {order: 2;}
+    .asideLeft {order: 3;}
+    .footer {order: 4;}
+
+}
+
+@media screen and (min-width: 992px) {
+    .asideLeft { flex: 4;}
+    .text {flex: 8;}
+    .asideRight {flex: 4;}
+
+    .asideLeft {order: 1;}
+    .text {order: 2;}
+    .asideRight {order: 3;}
+    .footer {order: 4;}
+}
+
+
+
+
+
+
+  
+
+
+ 
