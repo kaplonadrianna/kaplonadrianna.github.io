@@ -1,0 +1,18 @@
+div {
+    text-align: center;
+}
+
+span {
+    font-size: 10px;
+}
+
+.naglowek {
+    font-size: 15px; 
+}
+
+hr { 
+    background-color: whitesmoke;
+    border: 0; 
+    height: 1px;
+    width: 4em;
+ }
