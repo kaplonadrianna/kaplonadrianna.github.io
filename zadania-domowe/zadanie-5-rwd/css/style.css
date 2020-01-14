@@ -71,8 +71,9 @@ header {
 
     .text {
         color: white;
-        margin-top: 10px;
+        margin-top: -170px;
         margin-left: 700px;
+        top: none;
     }
 
     .text h1 {

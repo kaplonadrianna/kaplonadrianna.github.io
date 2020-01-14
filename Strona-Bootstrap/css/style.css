@@ -1,0 +1,9 @@
+.main-right {
+    justify-content: flex-end;
+}
+
+.image {
+    background-image: url(https://akademia108.pl/kurs-front-end/form-background.jpg);
+    background-size: cover;
+    height: 70vh;
+}

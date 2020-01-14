@@ -1,21 +1,24 @@
 'use strict';
 
-    $("#button").click(function () {
+$(document).ready(function(){
+ 
+  $("button").click(function(){
 
     $("div").animate({
-        color: "white",
-        fontSize: "19px",
-        left: "100px",
-        width: "100px",
-        height: "100px"
-    }, 5000).queue(function (next) {
-            $("div").css({
-              backgroundColor: "blue",
-              transition: "3s"
-            })
-
-    });
+          "height": "100px",
+          "width": "100px",
+          "left": "100px"
+      }, 3000, colorChange);
     });
 
+    function colorChange(){
+      $("div").animate({
+        backgroundColor: "green"
+      }, 2000, function(){
+        $("div").html("<h2>Animacja zakończona</h2>");
+      });
 
+    }
     
+});
+
