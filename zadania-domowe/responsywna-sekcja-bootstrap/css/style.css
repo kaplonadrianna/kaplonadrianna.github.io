@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+}
+
+span {
+    font-size: 10px;
+}
+
+.naglowek {
+    font-size: 20px; 
+    color: gray;
+}
+
+hr { 
+    background-color: whitesmoke;
+    border: 0; 
+    height: 1px;
+    width: 4em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
