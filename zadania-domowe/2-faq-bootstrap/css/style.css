@@ -11,7 +11,7 @@ hr {
     background-color: whitesmoke;
     border: 0; 
     height: 1px;
-    width: 7em;
+    width: 15em;
  }
 
  .panel-title {
@@ -29,3 +29,4 @@ a {
     color: orange;
     font-weight: normal;
 }
+
